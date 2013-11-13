@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+
+        <title>SHOPPIT</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href='main.css' rel='stylesheet'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+        <script src='application.js'></script>
+
+    </head>
+
+    <body>
+
+        <img src ='http://www.freeinfosociety.com/media/images/1031.jpg'/>
+        <br><br>
+        <p>Welcome to your shopping list. Type below to add an item, click on the item to cross it off.</p>
+        <br>
+        <form name"addToList">
+            Type the item to add: 
+            <input type ="text" name="addItemField" id="addField" onkeypress='enterPress(event)'><input type="button" value="LET'S DO SOME ADDITION" onclick = "addAnItem(this.form.addItemField.value)"/>
+        </form>
+        <br><br>
+        <div id="listDiv">
+
+            <ul id="theList"></ul>
+
+
+
+        </div>
+
+    </body>
+
+</html>
